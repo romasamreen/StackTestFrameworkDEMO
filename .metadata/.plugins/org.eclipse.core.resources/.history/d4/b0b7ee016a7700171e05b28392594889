@@ -1,0 +1,2 @@
+json_FILENAME=C:\MARS_FRAMEWORK\MARS_Automation_Framework_Projects\mars\JCI\Project\CSD\TestResources\SampleJsonFile\2017-03-17-0849-0abda490-f2c1-4766-b74b-96889ac5335f-1687922919256.json
+json_Path_1=$..equipment[0].points[5].samples[0].val

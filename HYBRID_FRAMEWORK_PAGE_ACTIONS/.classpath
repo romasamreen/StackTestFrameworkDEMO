@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="PROJECT_Page_Action"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HYBRID_FRAMEWORK_BUSINESS_LAYER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HYBRID_FRAMEWORK_COMMONS"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HYBRID_FRAMEWORK_CORE"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HYBRID_FRAMEWORK_PAGE_FACTORY"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HYBRID_FRAMEWORK_REPORTS"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/HYBRID_FRMAEWORK_PROJECTS"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

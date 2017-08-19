@@ -1,0 +1,145 @@
+
+package commons.Web;
+
+import java.util.NoSuchElementException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class WebDropDown {
+
+	private static Select oselect;
+	private static boolean status = false;
+
+	/**
+	 * Checks if drop down is visible.
+	 *
+	 * @param WebDriver
+	 *            the driver
+	 * @param By
+	 *            the by
+	 * @return true, if drop down is visible, else false
+	 * 
+	 * @throws NoSuchElementException
+	 * 
+	 */
+	public static boolean isDropDownVisible(WebDriver driver, By by) {
+		WebDriverWait zeroWait = new WebDriverWait(driver, 10);
+		ExpectedCondition<org.openqa.selenium.WebElement> c = ExpectedConditions.presenceOfElementLocated(by);
+		try {
+			zeroWait.until(c);
+			// logger.debug("Create New Application button is visible");
+			return true;
+		} catch (TimeoutException e) {
+			// logger.debug("Create New Application button is not visible");
+			return false;
+		}
+	}
+
+	/**
+	 * Select element by visible text.
+	 *
+	 * @param element
+	 *            the WebElement reference of DropDown
+	 * @param textValue
+	 *            the String value to be selected from DropDown
+	 * @return returns true if value is selected, false otherwise
+	 * 
+	 * @throws NoSuchElementException
+	 * 
+	 * @see {@link Selector}
+	 * 
+	 * 
+	 */
+	public static Boolean SelectElementByVisibleText(WebElement element, String textValue) {
+
+		try {
+			if (element.isDisplayed() && element.isEnabled()) {
+				oselect = new Select(element);
+				oselect.selectByVisibleText(textValue);
+				status = true;
+				return status;
+			} else {
+				status = false;
+				return status;
+			}
+		} catch (NoSuchElementException nse) {
+
+			System.out.println("Element not found : " + nse.getMessage());
+			return false;
+		}
+
+	}
+
+	/**
+	 * Select element by value tag in HTML.
+	 *
+	 * @param element
+	 *            the WebElement reference of DropDown
+	 * @param textValue
+	 *            the String value to be selected from DropDown
+	 * @return returns true if value is selected, false otherwise
+	 * 
+	 * @throws NoSuchElementException
+	 * 
+	 * @see {@link Selector}
+	 */
+	public static Boolean SelectElementByValue(WebElement element, String textValue) {
+
+		try {
+			if (element.isDisplayed() && element.isEnabled()) {
+				oselect = new Select(element);
+				oselect.selectByValue(textValue);
+				status = true;
+				return status;
+			} else {
+				status = false;
+				return status;
+			}
+		} catch (NoSuchElementException nse) {
+
+			System.out.println("Element not found : " + nse.getMessage());
+			return false;
+		}
+
+	}
+
+	/**
+	 * Select element by Index of dropdown value.
+	 *
+	 * @param element
+	 *            the WebElement reference of DropDown
+	 * @param textIndex
+	 *            the {@link Integer} index to be selected from DropDown
+	 * @return returns true if value is selected, false otherwise
+	 * 
+	 * @throws NoSuchElementException
+	 * 
+	 * @see {@link Selector}
+	 */
+	public static Boolean SelectElementByIndex(WebElement element, int textIndex) {
+
+		try {
+			if (element.isDisplayed() && element.isEnabled()) {
+				oselect = new Select(element);
+				oselect.selectByIndex(textIndex);
+				status = true;
+				return status;
+			} else {
+				status = false;
+				return status;
+			}
+		} catch (NoSuchElementException nse) {
+
+			System.out.println("Element not found : " + nse.getMessage());
+			return false;
+		}
+
+	}
+}

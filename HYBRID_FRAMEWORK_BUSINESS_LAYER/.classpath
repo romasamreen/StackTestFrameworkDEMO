@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="BusinessLayer"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/accessors-smart-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/asm-5.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/json-path-0.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/json-path-2.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/json-smart-2.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/jsonpath/slf4j-api-1.7.16.jar"/>
+	<classpathentry kind="lib" path="C:/TEST_FRAMEWORK/lib/javax.mail.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

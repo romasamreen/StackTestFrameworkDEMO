@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.test.Random;
+
+/**
+ * @author cdeyso
+ *
+ */
+public class Random_Page_Factory {
+	
+	
+
+}
