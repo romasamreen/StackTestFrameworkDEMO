@@ -1,0 +1,6 @@
+url=https://www.redbus.in/
+reportfilepath=C:/StackTestFrameworkDEMO/HYBRID_FRAMEWORK_REPORTS/framework/Organization/RedBusRnD/RedBus_AUTOMATION_EXECUTION_REPORT.HTML
+screenshotpath=C:/trash/
+testsuitelocation=C:/MARS_FRAMEWORK/MARS_Automation_Framework_Tests/testNG-ExperimentalCSD.xml
+emailconfigfile=C:/StackTestFrameworkDEMO/HYBRID_FRMAEWORK_PROJECTS/framework/Organization/RedBusRnD/Configuration/mailconfig.properties
+############################# -- https://csdu-app.johnsoncontrols.com/csd2.0/ -- CSD 2.0 UI -- ##################

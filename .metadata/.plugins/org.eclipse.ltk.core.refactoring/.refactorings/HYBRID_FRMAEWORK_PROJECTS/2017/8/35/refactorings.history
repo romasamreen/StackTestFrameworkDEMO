@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Configuration&apos; to &apos;RedBusRnD&apos;&#x0D;&#x0A;- Original project: &apos;HYBRID_FRMAEWORK_PROJECTS&apos;&#x0D;&#x0A;- Destination element: &apos;RedBusRnD&apos;&#x0D;&#x0A;- Original element: &apos;Configuration&apos;" description="Copy folder" element1="framework/Organization/ProjectName/Configuration" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1503988463480" target="/HYBRID_FRMAEWORK_PROJECTS/framework/Organization/RedBusRnD" units="0" version="1.0"/>
+</session>

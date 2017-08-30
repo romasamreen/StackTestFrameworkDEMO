@@ -1,0 +1,49 @@
+/**
+ * 
+ */
+package framework.SD.RedBus.SeatSelect.Canvas;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.relevantcodes.extentreports.ExtentTest;
+
+import commons.Web.WebElementCommon;
+
+/**
+ * @author cdeyso
+ *
+ */
+
+public class REDBUS_SeatSelect_Canvas_Page_Factory {
+	
+	private WebDriver driver=null;
+	private ExtentTest logger=null;
+	
+	private WebElementCommon webElementCommon = null;
+	
+	public REDBUS_SeatSelect_Canvas_Page_Factory(WebDriver driver, ExtentTest logger) {
+		this.driver=driver;
+		this.logger=logger;
+		PageFactory.initElements(driver, this);
+		webElementCommon = new WebElementCommon(driver, logger);
+	}
+	
+	//RedBus Home Page -- From TextBox
+	@FindBy(xpath = "//input[@type='text'][@id='src']")
+	private WebElement redbus_FromTextBox;
+
+	public WebElement get_redbus_FromTextBox() {
+		if (webElementCommon.waitForElementPresent(driver, redbus_FromTextBox, logger)) {
+			return redbus_FromTextBox;
+		} else
+			return null;
+	}
+	
+	//RedBus Home Page -- From TextBox
+	
+
+}

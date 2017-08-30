@@ -1,0 +1,21 @@
+*** This is an automatically generated email, please do not reply ***
+
+Greetings……
+
+Hi All,
+
+Please find attached MARS AUTOMATION Execution Report for your reference.
+
+Report Consists,
+
+•	Pass Test Cases
+•	Failed Test Cases
+•	Skip Test Cases
+•	Graphical Representation of Report
+•	Failed Screen Shot
+
+*** You are receiving this because you are subscribed to this thread ***
+
+Thanks,
+
+MARS AUTOMATION GROUP

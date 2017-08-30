@@ -1,0 +1,8 @@
+host=webmail.jci.com
+port=null
+toAddressList=souvik.dey@jci.com;
+fromAddress=NO_REPLY@AUTOMATIONTEAM.COM
+EmailSubject=CSD Automation report
+messageText=C:/StackTestFrameworkDEMO/HYBRID_FRAMEWORK_BUSINESS_LAYER/BusinessLayer/emailSubject.txt
+reportfilepath=C:/StackTestFrameworkDEMO/HYBRID_FRAMEWORK_REPORTS/framework/Organization/RedBusRnD/RedBus_AUTOMATION_EXECUTION_REPORT.HTML	
+attachment=C:/StackTestFrameworkDEMO/HYBRID_FRAMEWORK_REPORTS/framework/Organization/RedBusRnD/RedBus_AUTOMATION_EXECUTION_REPORT.HTML

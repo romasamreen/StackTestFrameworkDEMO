@@ -1,0 +1,6 @@
+url=https://www.redbus.in/
+reportfilepath=C:/MARS_FRAMEWORK/MARS_Automation_Framework_Reports/mars/JCI/Project/CSD/Graphical_Report/CSD_AUTOMATION_EXECUTION_REPORT.HTML
+screenshotpath=//10.117.16.71/Project/CSD/
+testsuitelocation=C:/MARS_FRAMEWORK/MARS_Automation_Framework_Tests/testNG-ExperimentalCSD.xml
+emailconfigfile=C:/MARS_FRAMEWORK/MARS_Automation_Framework_Projects/mars/JCI/Project/CSD/Configuration/mailconfig.properties
+############################# -- https://csdu-app.johnsoncontrols.com/csd2.0/ -- CSD 2.0 UI -- ##################

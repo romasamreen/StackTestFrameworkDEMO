@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package framework.SD.RedBus.SeatSelect.Canvas;
+
+import framework.modules.core.BaseClass;
+
+/**
+ * @author cdeyso
+ *
+ */
+public class REDBUS_SeatSelect_Canvas_Page_Test extends BaseClass{
+
+	
+}

@@ -1,0 +1,54 @@
+/**
+ * 
+ */
+package framework.SD.RedBus.SeatSelect.Canvas;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+/**
+ * @author cdeyso
+ *
+ */
+public class REDBUS_SeatSelect_Canvas_Page_Action {
+	
+	private static WebDriver driver = null;
+	private static ExtentTest logger = null;
+
+	
+	private static REDBUS_SeatSelect_Canvas_Page_Factory RBcanvasPageFactory = null;
+	
+	public REDBUS_SeatSelect_Canvas_Page_Action(WebDriver driver, ExtentTest logger) {
+		this.driver = driver;
+		this.logger = logger;
+		RBcanvasPageFactory = new REDBUS_SeatSelect_Canvas_Page_Factory(driver, logger);
+	}
+	
+	public static void enterDestinationDetails() 
+			throws InterruptedException {
+		
+		Thread.sleep(7000);
+		WebElement fromElement = RBcanvasPageFactory.get_redbus_FromTextBox();
+		if(fromElement!=null && fromElement.isDisplayed()){
+			fromElement.sendKeys("Pune");
+			logger.log(LogStatus.PASS, "From Place Entered.");
+			Thread.sleep(2000);
+			List<WebElement> fromSearchList = RBcanvasPageFactory.get_redbus_FromTextBox_Search();
+			if(fromSearchList.size()>0){
+				int listSize = fromSearchList.size();
+				WebElement listElementOne = fromSearchList.get(0);
+				listElementOne.click();
+				logger.log(LogStatus.PASS, "Selected From Place!");
+			}
+		}
+	}
+	
+	public static void enterToDetails() {
+		
+	}
+}

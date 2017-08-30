@@ -92,7 +92,7 @@ public class BaseClass {
 	// TODO -- Need to set this path dynamically once Windows
 	/** The prop File. */
 	// Start up program integrate with MARS Framework.
-	static String projectPropertiesFile = "C:/MARS_FRAMEWORK/MARS_Automation_Framework_Projects/mars/JCI/Project/CSD/Configuration/config.properties";
+	static String projectPropertiesFile = "C:/StackTestFrameworkDEMO/HYBRID_FRMAEWORK_PROJECTS/framework/Organization/RedBusRnD/Configuration/config.properties";
 
 	/** The where to run. */
 	private static String whereToRun = "local"; // possible values - local,

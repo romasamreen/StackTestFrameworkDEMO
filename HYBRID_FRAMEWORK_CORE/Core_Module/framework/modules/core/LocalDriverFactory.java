@@ -51,8 +51,9 @@ public class LocalDriverFactory {
 				driver = new ChromeDriver();
 			    validateURL(driver, url);
 				//Resize the current window to specific dimension
-				driver.manage().window().setSize(new Dimension(1250,700));
+				//driver.manage().window().setSize(new Dimension(1250,700));
 			    //windowBuilder = new WindowBuilder(new ChromeDriver(capabilities), url);
+				driver.manage().window().maximize();
 			    driver.get(url);
 				return driver;
 			}

@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+package framework.SD.RedBus.SeatSelect.Canvas;
+
+import org.openqa.selenium.WebDriver;
+
+import com.relevantcodes.extentreports.ExtentTest;
+
+/**
+ * @author cdeyso
+ *
+ */
+public class REDBUS_SeatSelect_Canvas_Page_Action {
+	
+	private static WebDriver driver = null;
+	private static ExtentTest logger = null;
+
+	
+	private static REDBUS_SeatSelect_Canvas_Page_Factory RBcanvasPageFactory = null;
+	
+}
