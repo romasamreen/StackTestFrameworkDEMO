@@ -5,6 +5,7 @@ package framework.SD.RedBus.SeatSelect.Canvas;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -127,16 +128,28 @@ public class REDBUS_SeatSelect_Canvas_Page_Action {
 		
 		WebElement deckSeatElement = RBcanvasPageFactory.get_redbus_searcResult_CheckSeats();
 		if(deckSeatElement!=null){
+			Actions action = new Actions(driver);
+			canvasJSExecutor(deckSeatElement);
+			action.click();
+			//deckSeatElement.click();
+			//if(deckSeatElement.get)
 			String canvasWidth = deckSeatElement.getAttribute("width");
 			int xOffset = Integer.parseInt(canvasWidth);
 			String canvasHeight = deckSeatElement.getAttribute("height");
 			int yOffset = Integer.parseInt(canvasHeight);
 			System.out.println("canvasWidth - "+canvasWidth+" canvasHeight - "+canvasHeight);
-			Actions action = new Actions(driver);
+			
 			MouseOperation.hoverMouseToElement(driver, logger, deckSeatElement);
 			Thread.sleep(3000);
 			//action.moveToElement(deckSeatElement, xOffset, yOffset).click().build().perform();
 			logger.log(LogStatus.PASS, "One Seat Clicked!");
 		}
+	}
+	
+	public static void canvasJSExecutor(WebElement canvasElement) {
+		
+		
+		JavascriptExecutor canvasJSE = (JavascriptExecutor)driver;
+		canvasJSE.executeScript("var ctx = arguments[0].getContext('2d');ctx.click();", canvasElement);
 	}
 }
