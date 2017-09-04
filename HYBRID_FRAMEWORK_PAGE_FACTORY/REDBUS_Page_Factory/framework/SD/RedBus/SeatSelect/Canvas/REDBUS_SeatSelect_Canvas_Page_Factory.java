@@ -197,4 +197,15 @@ public class REDBUS_SeatSelect_Canvas_Page_Factory {
 			return null;
 	}
 	
+	
+	//RedBus -- ToolTip Data
+	@FindBy(css = "div[id='abs'][class='abs']")
+	private WebElement redbus_searcResult_ToolTipData;
+	
+	public WebElement get_redbus_searcResult_ToolTipData() {
+		if (webElementCommon.waitForElementPresent(driver, redbus_searcResult_ToolTipData, logger)) {
+			return redbus_searcResult_ToolTipData;
+		} else
+			return null;
+	}
 }

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59163" started-at="2017-08-31T07:44:23Z" finished-at="2017-08-31T07:45:22Z">
+  <suite name="Default suite" duration-ms="85979" started-at="2017-09-04T13:02:31Z" finished-at="2017-09-04T13:03:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59163" started-at="2017-08-31T07:44:23Z" finished-at="2017-08-31T07:45:22Z">
+    <test name="Default test" duration-ms="85979" started-at="2017-09-04T13:02:31Z" finished-at="2017-09-04T13:03:57Z">
       <class name="framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeSuite" is-config="true" duration-ms="80" started-at="2017-08-31T13:14:23Z" finished-at="2017-08-31T13:14:23Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeSuite" is-config="true" duration-ms="100" started-at="2017-09-04T18:32:31Z" finished-at="2017-09-04T18:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-08-31T13:14:23Z" finished-at="2017-08-31T13:14:23Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-09-04T18:32:31Z" finished-at="2017-09-04T18:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-08-31T13:14:23Z" finished-at="2017-08-31T13:14:23Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeClass" is-config="true" duration-ms="1" started-at="2017-09-04T18:32:31Z" finished-at="2017-09-04T18:32:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.reflect.Method)[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeEachTestMethod" is-config="true" duration-ms="27116" started-at="2017-08-31T13:14:23Z" finished-at="2017-08-31T13:14:50Z">
+        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.reflect.Method)[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="beforeEachTestMethod" is-config="true" duration-ms="39009" started-at="2017-09-04T18:32:31Z" finished-at="2017-09-04T18:33:10Z">
           <params>
             <param index="0">
               <value>
@@ -30,23 +30,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTestMethod -->
-        <test-method status="PASS" signature="testCanvas()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="testCanvas" duration-ms="30537" started-at="2017-08-31T13:14:50Z" description="Hakuna Matata" finished-at="2017-08-31T13:15:21Z">
+        <test-method status="PASS" signature="testCanvas()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="testCanvas" duration-ms="44967" started-at="2017-09-04T18:33:10Z" description="Hakuna Matata" finished-at="2017-09-04T18:33:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCanvas -->
-        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterEachTestMethod" is-config="true" duration-ms="1492" started-at="2017-08-31T13:15:21Z" finished-at="2017-08-31T13:15:22Z">
+        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterEachTestMethod" is-config="true" duration-ms="1977" started-at="2017-09-04T18:33:55Z" finished-at="2017-09-04T18:33:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-31T13:15:22Z" finished-at="2017-08-31T13:15:22Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-04T18:33:57Z" finished-at="2017-09-04T18:33:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-08-31T13:15:22Z" finished-at="2017-08-31T13:15:22Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-09-04T18:33:57Z" finished-at="2017-09-04T18:33:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterSuite" is-config="true" duration-ms="3646" started-at="2017-08-31T13:15:22Z" finished-at="2017-08-31T13:15:26Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:framework.SD.RedBus.SeatSelect.Canvas.REDBUS_SeatSelect_Canvas_Page_Test@36b4cef0]" name="afterSuite" is-config="true" duration-ms="4003" started-at="2017-09-04T18:33:57Z" finished-at="2017-09-04T18:34:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -3,9 +3,14 @@
  */
 package framework.SD.RedBus.SeatSelect.Canvas;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -43,8 +48,8 @@ public class REDBUS_SeatSelect_Canvas_Page_Action {
 		clickSearchBusesButton();
 	}
 	
-	public static void selectAppropriyateSeats() 
-			throws InterruptedException {
+	public static void selectAppropriateSeats() 
+			throws InterruptedException, AWTException {
 		
 		Thread.sleep(7000);
 		viewBusSeats();
@@ -123,14 +128,27 @@ public class REDBUS_SeatSelect_Canvas_Page_Action {
 	}
 	
 	public static void selectBusSeatsFromDeck() 
-			throws InterruptedException {
+			throws InterruptedException, AWTException {
 		
 		
 		WebElement deckSeatElement = RBcanvasPageFactory.get_redbus_searcResult_CheckSeats();
 		if(deckSeatElement!=null){
-			Actions action = new Actions(driver);
-			canvasJSExecutor(deckSeatElement);
-			action.click();
+			System.out.println(deckSeatElement.getSize());
+			Point deckSeatElementLoc = deckSeatElement.getLocation();
+			int loc_x = deckSeatElementLoc.getX();
+			int loc_y = deckSeatElementLoc.getY();
+			System.out.println("X- "+loc_x+" Y- "+loc_y);
+			int x_revised = loc_x+180;
+			int y_revised = loc_y-30;
+			 Robot robot = new Robot();
+			 robot.mouseMove(x_revised,y_revised);
+			 getToolTipData();
+			 robot.mousePress(InputEvent.BUTTON1_MASK);
+			 robot.mouseRelease(InputEvent.BUTTON1_MASK);
+			   
+			//Actions action = new Actions(driver);
+			//canvasJSExecutor(deckSeatElement);
+			//action.click().build().perform();;
 			//deckSeatElement.click();
 			//if(deckSeatElement.get)
 			String canvasWidth = deckSeatElement.getAttribute("width");
@@ -138,6 +156,7 @@ public class REDBUS_SeatSelect_Canvas_Page_Action {
 			String canvasHeight = deckSeatElement.getAttribute("height");
 			int yOffset = Integer.parseInt(canvasHeight);
 			System.out.println("canvasWidth - "+canvasWidth+" canvasHeight - "+canvasHeight);
+			//robot.mouseMove(xOffset,yOffset+10);
 			
 			MouseOperation.hoverMouseToElement(driver, logger, deckSeatElement);
 			Thread.sleep(3000);
@@ -150,6 +169,18 @@ public class REDBUS_SeatSelect_Canvas_Page_Action {
 		
 		
 		JavascriptExecutor canvasJSE = (JavascriptExecutor)driver;
-		canvasJSE.executeScript("var ctx = arguments[0].getContext('2d');ctx.click();", canvasElement);
+		canvasJSE.executeScript("var ctx = arguments[0].getContext('2d');ctx.stroke();", canvasElement);
+	}
+	
+	public static void getToolTipData() 
+			throws InterruptedException {
+		
+		Thread.sleep(3000);
+		WebElement toolTipData = RBcanvasPageFactory.get_redbus_searcResult_ToolTipData();
+		if(toolTipData!=null && toolTipData.isDisplayed()){
+			String toolTipData_text = toolTipData.getText();
+			System.out.println("toolTipData_text - "+toolTipData_text);
+			logger.log(LogStatus.INFO, "ToolTip Data Recorded : "+toolTipData_text);
+		}
 	}
 }

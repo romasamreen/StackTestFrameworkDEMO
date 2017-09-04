@@ -21,12 +21,13 @@ public class REDBUS_SeatSelect_Canvas_Page_Test extends BaseClass{
 			
 			REDBUS_SeatSelect_Canvas_Page_Action canvasPA = new REDBUS_SeatSelect_Canvas_Page_Action(driver, logger);
 			canvasPA.enterDestinationDetails();
-			canvasPA.selectAppropriyateSeats();
+			canvasPA.selectAppropriateSeats();
 			
 			
 			getFinalReport(driver, logger, methodName ,	true);
 		} catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 			getFinalReport(driver, logger, methodName ,	false);
 		}
 		
